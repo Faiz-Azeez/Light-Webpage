@@ -63,6 +63,8 @@ button span{
     width: 26px;
     border-radius: 50%;
     margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s ;
+
 }
 
 .lamp-container{
@@ -82,6 +84,8 @@ button span{
     left: 50%;
     transform: translateX(-51%);
     width: 700px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .text-container{
@@ -129,3 +133,16 @@ button span{
     background: #009867;
     display: block;
 }
+
+.active{
+    background: green;
+}
+
+.active span{
+    background: #fff;
+    margin-left:  32px; 
+}
+
+ .on{
+    opacity: 1;
+ }   
